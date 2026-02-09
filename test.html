@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./template-web.js"></script>
+    <script src="./axios.min.js"></script>
+</head>
+<body>
+    <script>
+        $.ajax(
+            {
+            url:'https://api.52vmy.cn/api/query/daxue?daxue=濮阳职业技术学院',
+            dataType:'jsonp',
+            success:function (res){
+                console.log(res)
+            }
+        }
+        )
+    </script>
+</body>
+</html>
